@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>    
+    <remote name="github_com" fetch="ssh://git@github.com/COVESA"/>
+    <project path="external/covesa/vsomeip" name="vsomeip" remote="github_com" revision="refs/tags/3.1.20.3"/>
+</manifest>

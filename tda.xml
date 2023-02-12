@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="TDA" fetch="ssh://git@github.com/dterletskiy"/>
+    <project path="vendor/tda/devices" name="aosp_vendor_tda_device" remote="TDA" revision="main"/>
+    <project path="vendor/tda/examples" name="aosp_vendor_tda_examples" remote="TDA" revision="main"/>
+    <project path="vendor/tda/frameworks/carpc" name="carpc" remote="TDA" revision="main"/>
+    <project path="vendor/tda/interfaces" name="aosp_vendor_tda_interfaces" remote="TDA" revision="main"/>
+    <project path="vendor/tda/prebuilts" name="aosp_vendor_tda_prebuilts" remote="TDA" revision="main"/>
+    <project path="vendor/tda/resources" name="aosp_vendor_tda_resources" remote="TDA" revision="main"/>
+</manifest>
+

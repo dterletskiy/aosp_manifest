@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="android-12.1.0_r8.xml" />
+  <include name="android-12.1.0_r8-override.xml" />
+  <include name="boost-1_72_0.xml" />
+  <include name="common_api.xml" />
+  <include name="vsomeip.xml" />
+  <include name="tda.xml" />
+
+</manifest>

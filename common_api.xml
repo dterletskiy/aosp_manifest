@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>    
+    <remote name="github_com" fetch="ssh://git@github.com/COVESA"/>
+    <project path="external/covesa/capicxx-core-runtime" name="capicxx-core-runtime" remote="github_com" revision="master"/>
+    <project path="external/covesa/capicxx-someip-runtime" name="capicxx-someip-runtime" remote="github_com" revision="master"/>
+</manifest>
