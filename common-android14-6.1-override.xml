@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="aosp" fetch="https://android.googlesource.com/" review="https://android-review.googlesource.com/" />
+  <default revision="master" remote="aosp" sync-j="4" />
+  <!-- Overriding existing repo (variant 1) -->
+  <!-- <remove-project name="kernel/common-modules/virtual-device" /> -->
+  <!-- <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="trout-android12-5.10" /> -->
+  <!-- Overriding existing repo (variant 2) -->
+  <!-- <extend-project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="trout-android12-5.10" /> -->
+</manifest>
