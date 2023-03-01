@@ -11,7 +11,8 @@ Defining variables:
 REPO_TOOL_URL="https://storage.googleapis.com/git-repo-downloads/repo"
 
 MANIFEST_URL="https://android.googlesource.com/kernel/manifest"
-BRANCH="common-android14-6.1"
+VERSION="common-android14-6.1-dev"
+BRANCH="kernel/manifest/${VERSION}"
 MANIFEST_NAME="default.xml"
 
 ARCH="aarch64"
@@ -19,17 +20,22 @@ DEVICE="virtual_device_${ARCH}"
 BUILD_CONFIG="//common-modules/virtual-device:${DEVICE}"
 
 ROOT_DIR="/mnt/dev/android/"
-SOURCE_DIR="${ROOT_DIR}/source/kernel/${BRANCH}"
-DEPLOY_DIR="${ROOT_DIR}/deploy/kernel/${BRANCH}/${DEVICE}"
+SOURCE_DIR="${ROOT_DIR}/source/kernel/${VERSION}"
+DEPLOY_DIR="${ROOT_DIR}/deploy/kernel/${VERSION}/${DEVICE}"
+</pre>
+
+
+Create and go to source directory:
+
+<pre>
+mkdir -p ${SOURCE_DIR}
+cd ${SOURCE_DIR}
 </pre>
 
 
 Install repo tool:
 
 <pre>
-mkdir -p ${SOURCE_DIR}
-cd ${SOURCE_DIR}
-
 curl ${REPO_TOOL_URL} > repo
 chmod a+x repo
 </pre>
@@ -38,8 +44,8 @@ chmod a+x repo
 Sync Android Kernel project:
 
 <pre>
-repo --trace init -u ${MANIFEST_URL} -m ${MANIFEST_NAME} -b ${BRANCH} --depth=1
-repo --trace sync -c -j4
+repo --trace init --manifest-url=${MANIFEST_URL}  --manifest-name=${MANIFEST_NAME}  --manifest-branch=${BRANCH} --depth=1
+repo --trace sync --current-branch --no-clone-bundle --no-tags
 </pre>
 
 
