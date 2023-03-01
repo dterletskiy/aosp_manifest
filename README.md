@@ -10,7 +10,7 @@ Defining variables:
 <pre>
 REPO_TOOL_URL="https://storage.googleapis.com/git-repo-downloads/repo"
 
-MANIFEST_URL="https://android.googlesource.com/kernel/manifest"
+MANIFEST_URL="https://github.com/dterletskiy/aosp_manifest.git"
 VERSION="common-android14-6.1-dev"
 BRANCH="kernel/manifest/${VERSION}"
 MANIFEST_NAME="default.xml"
