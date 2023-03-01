@@ -1,8 +1,15 @@
-# aosp_manifest
+# Android platform
 
-This repository contains xml files with original android manifest and othen manifests for extending aosp.
 
-Sync and build instructions.
+## Description
+
+This repository contains Android platform manifest files and description how to build it.
+
+Original Android platform manifest could be found in https://android.googlesource.com/platform/manifest/.
+Manifest from some branch of this repository is used as base manifest and mentioned in ***default.xml*** first.
+
+
+## Sync and build instructions.
 
 
 Defining variables:
@@ -15,12 +22,12 @@ VERSION="android-12.1.0_r8-dev"
 BRANCH="platform/manifest/${VERSION}"
 MANIFEST_NAME="default.xml"
 
-ARCH="aarch64"
-DEVICE="virtual_device_${ARCH}"
-BUILD_CONFIG="//common-modules/virtual-device:${DEVICE}"
+ARCH="arm64"
+DEVICE="aosp_trout_${ARCH}"
 
 ROOT_DIR="/mnt/dev/android/"
 SOURCE_DIR="${ROOT_DIR}/source/platform/${VERSION}"
+BUILD_DIR="${ROOT_DIR}/build/platform/${VERSION}"
 DEPLOY_DIR="${ROOT_DIR}/deploy/platform/${VERSION}/${DEVICE}"
 </pre>
 
@@ -52,5 +59,8 @@ repo --trace sync --current-branch --no-clone-bundle --no-tags
 Build Android Platform project:
 
 <pre>
-@TDA: to do
+export OUT_DIR_COMMON_BASE=${BUILD_DIR}/..
+source build/envsetup.sh
+lunch ${DEVICE}
+make showcommands
 </pre>
