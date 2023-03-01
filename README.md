@@ -6,11 +6,13 @@
 This repository contains Android u-boot manifest files and description how to build it.
 
 Original u-boot manifest was not found in https://android.googlesource.com/.
+
 But it is possible to find Android u-boot manifest in https://ci.android.com/:
-    - Go to https://ci.android.com/builds/branches/aosp_u-boot-mainline/grid?
-    - Choose the u-boot build (date and configuration), which you would like to build locally and open it's artifacts.
-    - The is ***manifest_xyz.xml*** inside just opened artifacts, where ***xyz*** would be the opened CI/CD job number ( e.g. 9671786 )
-    - Exactly this manifest could be used as the base manifest to sync u-boot source code and required environment.
+
+- Go to https://ci.android.com/builds/branches/aosp_u-boot-mainline/grid?
+- Choose the u-boot build (date and configuration), which you would like to build locally and open it's artifacts.
+- The is ***manifest_xyz.xml*** inside just opened artifacts, where ***xyz*** would be the opened CI/CD job number ( e.g. 9671786 )
+- Exactly this manifest could be used as the base manifest to sync u-boot source code and required environment.
 
 
 
