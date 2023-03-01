@@ -1,8 +1,14 @@
-# aosp_manifest
+# Android kernel
 
-This repository contains xml files with original android kernel manifest and othen manifests for extending kernel.
+## Description
 
-Sync and build instructions.
+This repository contains Android kernel manifest files and description how to build it.
+
+Original Android kernel manifest could be found in https://android.googlesource.com/kernel/manifest/.
+Manifest from some branch of this repository is used as base manifest and mentioned in ***default.xml*** first.
+
+
+## Sync and build instructions.
 
 
 Defining variables:
