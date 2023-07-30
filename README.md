@@ -25,7 +25,7 @@ Defining variables:
 REPO_TOOL_URL="https://storage.googleapis.com/git-repo-downloads/repo"
 
 MANIFEST_URL="https://github.com/dterletskiy/aosp_manifest.git"
-VERSION="u-boot-mainline-9671786"
+VERSION="u-boot-mainline-master"
 BRANCH="u-boot/manifest/${VERSION}"
 MANIFEST_NAME="default.xml"
 

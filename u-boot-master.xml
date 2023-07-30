@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <contactinfo bugurl="go/repo-bug"/>
+  <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android.googlesource.com/"/>
+  <default revision="master" remote="aosp" sync-j="4"/>
+  <superproject name="kernel/superproject" remote="aosp" revision="master"/>
+  <project path="bootable/libbootloader" name="platform/bootable/libbootloader" revision="master"/>
+  <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" revision="master"/>
+  <project path="build/kernel" name="kernel/build" revision="master">
+    <linkfile dest="build/build.sh" src="build.sh"/>
+    <linkfile dest="build/build_utils.sh" src="build_utils.sh"/>
+    <linkfile dest="build/_setup_env.sh" src="_setup_env.sh"/>
+    <linkfile dest="tools/bazel" src="kleaf/bazel.sh"/>
+  </project>
+  <project path="external/arm-trusted-firmware" name="platform/external/arm-trusted-firmware" revision="master"/>
+  <project path="external/boringssl" name="platform/external/boringssl" revision="master"/>
+  <project path="external/compiler-rt" name="platform/external/compiler-rt" revision="master"/>
+  <project path="external/dtc" name="platform/external/dtc" revision="master"/>
+  <project path="external/open-dice" name="platform/external/open-dice" revision="master"/>
+  <project path="external/bazel-skylib" name="platform/external/bazel-skylib" revision="master"/>
+  <project path="external/stardoc" name="platform/external/stardoc" revision="master"/>
+  <project path="external/swig" name="platform/external/swig" revision="master"/>
+  <project path="external/zlib" name="platform/external/zlib" revision="master"/>
+  <project path="u-boot" name="platform/external/u-boot" revision="master">
+    <linkfile dest=".source_date_epoch_dir" src="."/>
+    <linkfile dest="WORKSPACE" src="bazel.WORKSPACE"/>
+  </project>
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" clone-depth="1" revision="master"/>
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" clone-depth="1" revision="master"/>
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" revision="master"/>
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" clone-depth="1" revision="master"/>
+  <project path="prebuilts/bazel/linux-x86_64" name="platform/prebuilts/bazel/linux-x86_64" clone-depth="1" revision="master"/>
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" revision="master"/>
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" revision="master"/>
+  <project path="prebuilts/jdk/jdk11" name="platform/prebuilts/jdk/jdk11" clone-depth="1" revision="master"/>
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" revision="master"/>
+  <project path="prebuilts/ndk-r23" name="toolchain/prebuilts/ndk/r23" clone-depth="1" revision="master"/>
+  <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" revision="master"/>
+</manifest>
