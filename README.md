@@ -17,7 +17,7 @@ Defining variables:
 REPO_TOOL_URL="https://storage.googleapis.com/git-repo-downloads/repo"
 
 MANIFEST_URL="https://github.com/dterletskiy/aosp_manifest.git"
-VERSION="common-android14-6.1-dev"
+VERSION="common-android-mainline-dev"
 BRANCH="kernel/manifest/${VERSION}"
 MANIFEST_NAME="default.xml"
 
