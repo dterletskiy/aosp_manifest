@@ -11,7 +11,7 @@
     <linkfile dest="build/build_utils.sh" src="build_utils.sh"/>
     <linkfile dest="build/_setup_env.sh" src="_setup_env.sh"/>
     <linkfile dest="tools/bazel" src="kleaf/bazel.sh"/>
-</project>
+  </project>
   <project path="external/arm-trusted-firmware" name="platform/external/arm-trusted-firmware" revision="bef081324a58c77ab585e337af6053ac6b6ff1c3"/>
   <project path="external/boringssl" name="platform/external/boringssl" revision="84f1dfe9bec6ffbebbdcb0af5225763479ce254c"/>
   <project path="external/compiler-rt" name="platform/external/compiler-rt" revision="b429e93fbf939d13875665f7666c36dde342371d"/>
@@ -24,7 +24,7 @@
   <project path="u-boot" name="platform/external/u-boot" revision="9b03edb275b6dd7f0433fb3f470dac3c1f1b8c80">
     <linkfile dest=".source_date_epoch_dir" src="."/>
     <linkfile dest="WORKSPACE" src="bazel.WORKSPACE"/>
-</project>
+  </project>
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" clone-depth="1" revision="dfa84be8039e99afda2a9b31fc8bb6238d4f1c62"/>
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" clone-depth="1" revision="3b6581a8f1fca1a0a3bf9f91d9eede6de77e414c"/>
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" revision="62a4a6b7a8b04da1ec8772eac68179bb26d62737"/>
